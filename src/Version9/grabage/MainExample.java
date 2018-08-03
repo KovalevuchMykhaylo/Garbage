@@ -31,13 +31,13 @@ public class MainExample {
         integers.add(10);
         Set<Double> doubles = new HashSet<>();
         doubles.add(10.10);
-        Set<Number> numbers = union(integers,doubles);
+        Set<Number> numbers = union(integers, doubles);
         numbers.forEach(System.out::println);
 
     }
 
-    static <E> Set<E> union(Set<? extends E> set1, Set<? extends E> set2){
-        Set<E> newSetUnionHashSet =  new HashSet<>(set1);
+    static <E> Set<E> union(Set<? extends E> set1, Set<? extends E> set2) {
+        Set<E> newSetUnionHashSet = new HashSet<>(set1);
         newSetUnionHashSet.addAll(set2);
         return newSetUnionHashSet;
     }

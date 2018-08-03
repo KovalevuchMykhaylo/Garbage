@@ -12,9 +12,11 @@ public enum ExtendedOperation implements Operations {
         }
     };
     private final String symbol;
+
     ExtendedOperation(String symbol) {
         this.symbol = symbol;
     }
+
     @Override
     public String toString() {
         return symbol;
